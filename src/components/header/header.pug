@@ -1,0 +1,148 @@
+-
+	var header_nav = {
+		class: 'header-nav',
+		title: false,
+		list: [
+			{
+				name: 'Почему мы',
+				nav: false,
+				href: ''
+			}, {
+				name: 'Примеры быстрых магазинов',
+				nav: false
+			}, {
+				name: 'На что влияет скорость',
+				nav: false
+			}, {
+				name: 'Наш подход',
+				nav: false
+			}
+		]
+	}
+-
+	var header_nav_compress = {
+		class: 'header-nav',
+		title: false,
+		compress: true,
+		list: [
+			{
+				name: 'Ссылка',
+				nav: false
+			}, {
+				name: 'Не ссылка',
+				span: true
+			}, {
+				name: 'Не ссылка - активная',
+				span: true,
+				active: true,
+			}, {
+				name: 'Не ссылка с подменю - активная',
+				span: true,
+				active: true,
+				nav: {
+					class: 'header-nav-l2',
+					title: 'header-nav-2',
+					list: [
+						{
+							name: 'Ссылка с подменю',
+							nav: {
+								class: 'header-nav-l3',
+								title: 'Ссылка',
+								list: [
+									{
+										name: 'Ссылка - активная',
+										active: true,
+									}, {
+										name: 'Не ссылка',
+										span: true
+									}, {
+										name: 'Не ссылка - активная',
+										span: true,
+										active: true,
+									}
+								]
+							}
+						}, {
+							name: 'Ссылка',
+						}, {
+							name: 'Ссылка',
+						},
+					]
+				}
+			}, {
+				name: 'Ссылка с подменю',
+				nav: {
+					class: 'header-nav-l2',
+					title: 'header-nav-2',
+					list: [
+						{
+							name: 'Ссылка с подменю',
+							nav: {
+								class: 'header-nav-l3',
+								title: 'Ссылка с подменю',
+								list: [
+									{
+										name: 'Ссылка - активная',
+										active: true,
+									}, {
+										name: 'Не ссылка',
+										span: true
+									}, {
+										name: 'Не ссылка - активная',
+										span: true,
+										active: true,
+									}
+								]
+							}
+						}, {
+							name: 'Ссылка',
+						},
+					]
+				}
+			}, {
+				name: 'Ссылка 233',
+				active: true,
+				nav: {
+					class: 'header-nav-l2',
+					title: 'header-nav-2',
+					list: [
+						{
+							name: 'Ссылка с подменю',
+							nav: {
+								class: 'header-nav-l3',
+								title: 'Ссылка',
+								list: [
+									{
+										name: 'Ссылка - активная',
+										active: true,
+									}, {
+										name: 'Не ссылка',
+										span: true
+									}, {
+										name: 'Не ссылка - активная',
+										span: true,
+										active: true,
+									}
+								]
+							}
+						}, {
+							name: 'Ссылка',
+						}, {
+							name: 'Ссылка',
+						},
+					]
+				}
+			}
+		]
+	}
+
++include-script('header')
+header.header
+	.header-container.container
+		.header-main
+			+logo({
+				src: 'images/SLAM_logo-color.svg'
+			})
+			+mainMenu('/about-us.html')
+			//- +social-list
+			+burger

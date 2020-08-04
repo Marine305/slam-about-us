@@ -1,0 +1,5 @@
+mixin datapicker(args)
+	+include-script-vendor('datepicker.min.js')
+	-
+		args.mod = 'form-control--data js-form-control--data'
+	+input(args)&attributes(attributes)

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Главная</title>
+    <!-- Подключение общих критический стилей-->
+    <style>@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}abbr,address,article,aside,audio,b,blockquote,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,figcaption,figure,footer,form,header,hgroup,html,i,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body,h4,h6{margin:0}fieldset,iframe,img{margin:0;outline:0;font-size:100%;border:0}a,body,fieldset,h1,h2,h3,h4,h5,h6,iframe,img{padding:0;background:0 0;vertical-align:baseline}body,h1,h2,h3,h4,h5,h6{border:0;outline:0}*{box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}a{margin:0;font-size:100%}input,select{vertical-align:middle}li{list-style-type:none}button,input{-webkit-appearance:none;border-radius:0}button{outline:0!important;background:0 0}input{-moz-appearance:none;appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:10px;padding-left:10px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-10px;margin-left:-10px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9{position:relative;width:100%;padding-right:10px;padding-left:10px}.col-auto{position:relative;padding-right:10px;padding-left:10px}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:10px;padding-left:10px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.row-cols-3>*{flex:0 0 33.33333%;max-width:33.33333%}.row-cols-4>*{flex:0 0 25%;max-width:25%}.row-cols-5>*{flex:0 0 20%;max-width:20%}.row-cols-6>*{flex:0 0 16.66667%;max-width:16.66667%}.col-auto{flex:0 0 auto;width:auto;max-width:100%}.col-1{flex:0 0 8.33333%;max-width:8.33333%}.col-2{flex:0 0 16.66667%;max-width:16.66667%}.col-3{flex:0 0 25%;max-width:25%}.col-4{flex:0 0 33.33333%;max-width:33.33333%}.col-5{flex:0 0 41.66667%;max-width:41.66667%}.col-6{flex:0 0 50%;max-width:50%}.col-7{flex:0 0 58.33333%;max-width:58.33333%}.col-8{flex:0 0 66.66667%;max-width:66.66667%}.col-9{flex:0 0 75%;max-width:75%}.col-10{flex:0 0 83.33333%;max-width:83.33333%}.col-11{flex:0 0 91.66667%;max-width:91.66667%}.col-12{flex:0 0 100%;max-width:100%}.order-first{order:-1}.order-last{order:13}.order-0{order:0}.order-1{order:1}.order-2{order:2}.order-3{order:3}.order-4{order:4}.order-5{order:5}.order-6{order:6}.order-7{order:7}.order-8{order:8}.order-9{order:9}.order-10{order:10}.order-11{order:11}.order-12{order:12}.offset-1{margin-left:8.33333%}.offset-2{margin-left:16.66667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.33333%}.offset-5{margin-left:41.66667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.33333%}.offset-8{margin-left:66.66667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.33333%}.offset-11{margin-left:91.66667%}body,html{height:100%}body{position:relative;display:block;width:100%;min-width:320px;z-index:-10000;font-family:Circe;font-display:swap;color:#282828;font-style:normal;font-weight:400;font-size:16px;line-height:1}body.menu-opened,body.modal-opened{position:fixed}body.modal-opened::before{pointer-events:none}body.menu-opened::before,body.modal-opened::before{content:'';position:absolute;width:100vw;height:100vh;left:0;top:0;z-index:2;opacity:1;background-color:rgba(0,0,0,.7);visibility:visible;padding-right:17px!important}.wrapper,body.fixed-scroll{overflow:hidden}body.header-scroll{padding-top:58px}.wrapper{display:flex;flex-direction:column;min-height:100vh}.main{flex:1 0 auto}.bold{font-weight:500}.first-screen,.first-screen-bg *{width:100%;height:100%;max-height:100%;min-height:700px}.first-screen-bg *{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:-1;-o-object-fit:cover;object-fit:cover;position:absolute}.first-screen{display:flex;align-items:center;color:#fff;position:relative;background:-webkit-linear-gradient(45deg,rgba(190,40,166,.8) 0,rgba(228,128,35,.7) 50%)}.first-screen__body{display:flex;flex-wrap:wrap;width:100%;margin:120px 0 80px}.first-screen__text-col{width:55%;padding-right:30px}.first-screen__form-col{width:100%;max-width:430px}.first-screen .h1,.first-screen h1{color:#fff}.first-screen .text-20{font-weight:700;font-size:20px}.first-screen .fs-list{margin:40px 0}.first-screen .fs-list__item{font-size:20px;padding:5px 0;line-height:1.2}.fs-form{background-color:#fff;padding:60px 50px;max-width:430px}.fs-form__title{color:#171717;margin-bottom:20px}.fs-form__title-head{font-size:20px;line-height:1.2;font-weight:500;letter-spacing:.03em;text-align:center}.fs-form__title-descr{font-size:16px;font-weight:300;margin:12px 0;line-height:1.3;text-align:center}.header-container .col-md-12{position:unset}.header{position:absolute;z-index:10;width:100%}.header .logo__img{max-width:210px}.header-main,.logo{display:flex;align-items:center}.header-main{padding:25px 0;justify-content:space-between}.header-main .logo{width:210px}.header-main.active .logo,.header-main.active .social-list,.no-critical.no-critical--hidden:before{display:none}.social-list .header-nav{display:flex;width:auto;max-width:100%}.logo{flex-shrink:0}.logo__img{display:block;width:100%}.menu{justify-content:space-between}.burger,.menu,.menu__item,.menu__item .link{display:flex;align-items:center}.menu__item{padding:5px 10px}.menu__item .link{font-size:18px;color:#fff;line-height:1.2;white-space:nowrap;transition:border .2s;border-bottom:1px solid transparent;font-weight:500}.menu__item .link:hover{color:#fff;text-decoration:none;border-bottom:1px solid #fff}.menu.active{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:0 100%;transform-origin:0 100%;transition:transform .4s ease-in-out;transition:transform .4s ease-in-out,-webkit-transform .4s ease-in-out;padding:100px 20px 80px 0;width:300px}.burger{width:30px;height:23px;flex-direction:column;justify-content:space-between;position:relative;z-index:910}.burger .burger__item{width:30px;height:3px;background:#fff;border-radius:2px}.burger.active{z-index:1000;position:absolute;top:30px;right:10px}.burger.active .burger__item{width:32px;height:3px;background:#999}.burger.active .burger__item:first-child{-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-transform-origin:6% 50%;transform-origin:6% 50%}.burger.active .burger__item:nth-last-child(2n){display:none}.burger.active .burger__item:last-child{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:6% 50%;transform-origin:6% 50%}.no-critical{max-height:50vh;position:relative;min-height:100px;pointer-events:none;overflow:hidden}.no-critical.no-critical--hidden{max-height:0;min-height:0}.no-critical>*{transition:opacity .3s;opacity:0}.no-critical:before{content:'';position:absolute;width:20px;height:20px;display:block;border-radius:100%;border:2px solid #eee;border-top-color:#6a3970;left:calc(50% - 15px);top:calc(50% - 15px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-animation-name:rotate;animation-name:rotate;-webkit-animation-duration:.6s;animation-duration:.6s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;z-index:100;box-shadow:0 0 15px 4px #fff}.social,.social-list{display:flex;align-items:center}.social{width:30px;height:30px;justify-content:center;border-radius:50%;cursor:pointer}.social:not(:last-child){margin-right:7px}.social__icon{fill:#fff;transition:fill .3s}.social:hover .social__icon{fill:#7a4281}.btn{font-weight:500;font-size:16px;height:40px;text-align:center;align-items:center;justify-content:center;color:#fff;display:inline-flex;padding:0 24px;transition:background .3s,color .3s,border .3s;border:0;cursor:pointer;white-space:nowrap;font-family:Circe,Helvetica,Arial,sans-serif}.btn svg{transition:fill .3s}.btn,.btn:hover{text-decoration:none}.btn.btn-primary{overflow:hidden;width:100%;max-width:250px;height:45px;z-index:1;font-size:18px}.btn.btn-primary::before,.btn.btn-primary[disabled]::before{position:absolute;top:0;content:"";display:flex;height:45px;width:300%;z-index:-1;-webkit-transform:translateX(120px);transform:translateX(120px);transition:transform .3s;transition:transform .3s,-webkit-transform .3s}.btn.btn-primary::before{background:#7a428180;background:linear-gradient(45deg,#6a3970 0,rgba(231,141,58,.7) 50%)}.btn.btn-primary:hover:before{-webkit-transform:translateX(-60px);transform:translateX(-60px)}.btn.btn-primary span{position:relative;display:inline-flex}.btn.btn-primary[disabled]{cursor:no-drop!important;pointer-events:none}.btn.btn-primary[disabled]:active,.btn.btn-primary[disabled]:hover,.btn.disabled:active,.btn.disabled:hover,.btn[disabled]:active,.btn[disabled]:hover{background:#ccc!important;border-color:#ccc!important;color:#fff!important;box-shadow:none!important}.btn.btn-primary[disabled]::before{background:#ccc}.btn.btn--loading-center,.btn.btn-primary,.form-group{position:relative}.btn.btn--loading-center:before,.btn.btn--loading:before{content:'';position:absolute;top:calc(50% - 10px);width:20px;height:20px;display:block;border-radius:100%;border:2px solid #eee;border-top-color:#6a3970;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-animation-name:rotate;animation-name:rotate;-webkit-animation-duration:.6s;animation-duration:.6s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;z-index:100;box-sizing:border-box}.btn.btn--loading-center:before{left:calc(50% - 10px)}.btn.btn--loading{position:relative;padding-left:40px}.btn.btn--loading:before{left:10px}.btn.btn--sm{padding:0 16px;min-height:32px;height:32px;line-height:32px}.btn.disabled,.btn[disabled]{background:#ccc!important;border-color:#ccc!important;cursor:no-drop!important;color:#fff!important;box-shadow:none!important;pointer-events:none}.form-group{margin-bottom:20px;font-size:0;width:100%}.form-group.has-error .form-control{border:1px solid red}.form-group.has-error .form-control:focus{box-shadow:0 0 0 1px #ffaec1}.form-group.has-error .help-block{position:absolute;top:calc(100% + 3px);left:15px;font-size:12px;color:#f37575}.form-control{display:block;width:100%;height:45px;padding:0 20px;font-size:16px;line-height:1.3;color:#a7a7a7;outline:0;border:1px solid #cdcdcd;transition:.3s;background:#fff}.form-control:focus{border:1px solid #7a428180;box-shadow:0 0 4px 0 #7a428180}.form-control::-webkit-input-placeholder{color:#9fa59a}.form-control::-moz-placeholder{color:#9fa59a}.form-control:-ms-input-placeholder{color:#9fa59a}.form-control:-moz-placeholder{color:#9fa59a}.form-control-label{font-size:12px;line-height:1;color:#282828;margin:0;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;position:absolute;z-index:-1;top:50%}.form{display:flex;flex-direction:column}.form .btn,.form button{margin:30px auto 0}.lazy-img[data-bg],.swiper-lazy[data-bg]{display:block;background-image:linear-gradient(#f4f4f4,#f4f4f4)}.lazy-img-wrap{display:block;position:relative;overflow:hidden}.lazy-img-wrap.loaded .preloader{display:none}.hidden{display:none!important}.content .h1,.content .h2,.content .h3,.content .h4,.content .h5,.content .h6,.content h1,.content h2,.content h3,.content h4,.content h5,.content h6,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:Circe}.h1,.h2,h1,h2{line-height:1;margin:0 0 24px;letter-spacing:.05em}.h1,h1{font-weight:700;font-size:54px}.h1.small,h1.small{font-size:24px}.h2,h2{font-size:40px}.h2,.h3,.h4,h2,h3,h4{font-weight:700}.h3,h3{margin:0 0 12px;font-size:32px}.h4,h4{font-size:24px}.h5{font-size:20px;margin-bottom:15px}.h5,.h6,h5,h6{font-weight:700}h5{margin:0 0 15px;font-size:20px}.h6,h6{font-size:16px}.menu__item .link{text-decoration:none}.fade:not(.show){opacity:0;visibility:hidden}@media (min-width:576px){.container,.container-sm{max-width:575px}.col-sm{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-sm-1>*{flex:0 0 100%;max-width:100%}.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.33333%;max-width:33.33333%}.row-cols-sm-4>*{flex:0 0 25%;max-width:25%}.row-cols-sm-5>*{flex:0 0 20%;max-width:20%}.row-cols-sm-6>*{flex:0 0 16.66667%;max-width:16.66667%}.col-sm-auto{flex:0 0 auto;width:auto;max-width:100%}.col-sm-1{flex:0 0 8.33333%;max-width:8.33333%}.col-sm-2{flex:0 0 16.66667%;max-width:16.66667%}.col-sm-3{flex:0 0 25%;max-width:25%}.col-sm-4{flex:0 0 33.33333%;max-width:33.33333%}.col-sm-5{flex:0 0 41.66667%;max-width:41.66667%}.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-7{flex:0 0 58.33333%;max-width:58.33333%}.col-sm-8{flex:0 0 66.66667%;max-width:66.66667%}.col-sm-9{flex:0 0 75%;max-width:75%}.col-sm-10{flex:0 0 83.33333%;max-width:83.33333%}.col-sm-11{flex:0 0 91.66667%;max-width:91.66667%}.col-sm-12{flex:0 0 100%;max-width:100%}.order-sm-first{order:-1}.order-sm-last{order:13}.order-sm-0{order:0}.order-sm-1{order:1}.order-sm-2{order:2}.order-sm-3{order:3}.order-sm-4{order:4}.order-sm-5{order:5}.order-sm-6{order:6}.order-sm-7{order:7}.order-sm-8{order:8}.order-sm-9{order:9}.order-sm-10{order:10}.order-sm-11{order:11}.order-sm-12{order:12}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.33333%}.offset-sm-2{margin-left:16.66667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.33333%}.offset-sm-5{margin-left:41.66667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.33333%}.offset-sm-8{margin-left:66.66667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.33333%}.offset-sm-11{margin-left:91.66667%}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:768px}.col-md{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-md-1>*{flex:0 0 100%;max-width:100%}.row-cols-md-2>*{flex:0 0 50%;max-width:50%}.row-cols-md-3>*{flex:0 0 33.33333%;max-width:33.33333%}.row-cols-md-4>*{flex:0 0 25%;max-width:25%}.row-cols-md-5>*{flex:0 0 20%;max-width:20%}.row-cols-md-6>*{flex:0 0 16.66667%;max-width:16.66667%}.col-md-auto{flex:0 0 auto;width:auto;max-width:100%}.col-md-1{flex:0 0 8.33333%;max-width:8.33333%}.col-md-2{flex:0 0 16.66667%;max-width:16.66667%}.col-md-3{flex:0 0 25%;max-width:25%}.col-md-4{flex:0 0 33.33333%;max-width:33.33333%}.col-md-5{flex:0 0 41.66667%;max-width:41.66667%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-7{flex:0 0 58.33333%;max-width:58.33333%}.col-md-8{flex:0 0 66.66667%;max-width:66.66667%}.col-md-9{flex:0 0 75%;max-width:75%}.col-md-10{flex:0 0 83.33333%;max-width:83.33333%}.col-md-11{flex:0 0 91.66667%;max-width:91.66667%}.col-md-12{flex:0 0 100%;max-width:100%}.order-md-first{order:-1}.order-md-last{order:13}.order-md-0{order:0}.order-md-1{order:1}.order-md-2{order:2}.order-md-3{order:3}.order-md-4{order:4}.order-md-5{order:5}.order-md-6{order:6}.order-md-7{order:7}.order-md-8{order:8}.order-md-9{order:9}.order-md-10{order:10}.order-md-11{order:11}.order-md-12{order:12}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.33333%}.offset-md-2{margin-left:16.66667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.33333%}.offset-md-5{margin-left:41.66667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.33333%}.offset-md-8{margin-left:66.66667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.33333%}.offset-md-11{margin-left:91.66667%}}@media (min-width:1024px){.container,.container-lg,.container-md,.container-sm{max-width:1024px}.col-lg{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-lg-1>*{flex:0 0 100%;max-width:100%}.row-cols-lg-2>*{flex:0 0 50%;max-width:50%}.row-cols-lg-3>*{flex:0 0 33.33333%;max-width:33.33333%}.row-cols-lg-4>*{flex:0 0 25%;max-width:25%}.row-cols-lg-5>*{flex:0 0 20%;max-width:20%}.row-cols-lg-6>*{flex:0 0 16.66667%;max-width:16.66667%}.col-lg-auto{flex:0 0 auto;width:auto;max-width:100%}.col-lg-1{flex:0 0 8.33333%;max-width:8.33333%}.col-lg-2{flex:0 0 16.66667%;max-width:16.66667%}.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.33333%;max-width:33.33333%}.col-lg-5{flex:0 0 41.66667%;max-width:41.66667%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-7{flex:0 0 58.33333%;max-width:58.33333%}.col-lg-8{flex:0 0 66.66667%;max-width:66.66667%}.col-lg-9{flex:0 0 75%;max-width:75%}.col-lg-10{flex:0 0 83.33333%;max-width:83.33333%}.col-lg-11{flex:0 0 91.66667%;max-width:91.66667%}.col-lg-12{flex:0 0 100%;max-width:100%}.order-lg-first{order:-1}.order-lg-last{order:13}.order-lg-0{order:0}.order-lg-1{order:1}.order-lg-2{order:2}.order-lg-3{order:3}.order-lg-4{order:4}.order-lg-5{order:5}.order-lg-6{order:6}.order-lg-7{order:7}.order-lg-8{order:8}.order-lg-9{order:9}.order-lg-10{order:10}.order-lg-11{order:11}.order-lg-12{order:12}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.33333%}.offset-lg-2{margin-left:16.66667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.33333%}.offset-lg-5{margin-left:41.66667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.33333%}.offset-lg-8{margin-left:66.66667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.33333%}.offset-lg-11{margin-left:91.66667%}.form-control:hover{cursor:pointer}.form-control:hover:not(:focus){box-shadow:0 0 4px 0 #7a428180}.form-group.has-error .form-control:hover:not(:focus){border:1px solid red}}@media (min-width:1025px){.burger{display:none}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1200px}.col-xl{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-xl-1>*{flex:0 0 100%;max-width:100%}.row-cols-xl-2>*{flex:0 0 50%;max-width:50%}.row-cols-xl-3>*{flex:0 0 33.33333%;max-width:33.33333%}.row-cols-xl-4>*{flex:0 0 25%;max-width:25%}.row-cols-xl-5>*{flex:0 0 20%;max-width:20%}.row-cols-xl-6>*{flex:0 0 16.66667%;max-width:16.66667%}.col-xl-auto{flex:0 0 auto;width:auto;max-width:100%}.col-xl-1{flex:0 0 8.33333%;max-width:8.33333%}.col-xl-2{flex:0 0 16.66667%;max-width:16.66667%}.col-xl-3{flex:0 0 25%;max-width:25%}.col-xl-4{flex:0 0 33.33333%;max-width:33.33333%}.col-xl-5{flex:0 0 41.66667%;max-width:41.66667%}.col-xl-6{flex:0 0 50%;max-width:50%}.col-xl-7{flex:0 0 58.33333%;max-width:58.33333%}.col-xl-8{flex:0 0 66.66667%;max-width:66.66667%}.col-xl-9{flex:0 0 75%;max-width:75%}.col-xl-10{flex:0 0 83.33333%;max-width:83.33333%}.col-xl-11{flex:0 0 91.66667%;max-width:91.66667%}.col-xl-12{flex:0 0 100%;max-width:100%}.order-xl-first{order:-1}.order-xl-last{order:13}.order-xl-0{order:0}.order-xl-1{order:1}.order-xl-2{order:2}.order-xl-3{order:3}.order-xl-4{order:4}.order-xl-5{order:5}.order-xl-6{order:6}.order-xl-7{order:7}.order-xl-8{order:8}.order-xl-9{order:9}.order-xl-10{order:10}.order-xl-11{order:11}.order-xl-12{order:12}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.33333%}.offset-xl-2{margin-left:16.66667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.33333%}.offset-xl-5{margin-left:41.66667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.33333%}.offset-xl-8{margin-left:66.66667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.33333%}.offset-xl-11{margin-left:91.66667%}}@media (max-width:1024px){.first-screen__body{display:flex;flex-wrap:wrap;flex-direction:column;width:100%;margin:100px 0 70px}.first-screen__text-col{width:100%;padding:50px 0}.first-screen__form-col{width:100%;max-width:100%}.first-screen__form-col .fs-form{margin:0 auto}.first-screen .social-list{display:none}.header-main{width:100vw;position:absolute;z-index:1;left:0;top:0;padding:25px 15px}.menu,.menu__item{align-items:flex-start}.menu{-webkit-transform:translateX(110%);transform:translateX(110%);visibility:visible;opacity:1;display:flex;flex-direction:column;overflow:auto;box-shadow:0 20px 0 0 rgba(0,0,0,.3);position:absolute;z-index:900;top:0;bottom:0;right:0;justify-content:flex-start;transition:transform .4s ease-in-out,width .6s ease-in-out;transition:transform .4s ease-in-out,width .6s ease-in-out,-webkit-transform .4s ease-in-out;width:0;background:#fff;height:100vh;margin:0;padding:100px 0 80px}.menu__item{border-bottom:1px solid #eee;padding:10px 15px;margin:0 0 20px}.menu__item .link{font-size:18px;font-weight:500;text-align:left;line-height:1.2;white-space:normal;color:#7a4281;text-transform:uppercase}.fs-form{margin:0 auto}}@media (max-width:1023px){.h1,.h2,h1,h2{font-weight:500;font-size:32px;margin:0 0 16px}.h2,h2{font-size:28px}}@media (max-width:575px){.fs-form{padding:30px}.header .social-list{display:none}.container{width:100%;padding-right:16px;padding-left:16px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-16px;margin-left:-16px}.col,.col-12,.col-lg-5,.col-lg-6,.col-lg-7{position:relative;width:100%;padding-right:16px;padding-left:16px}}</style>
+    <!-- Подключение критический стилей отдельных страниц-->
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <!-- Мета инфо-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#3b3b3b">
+    <meta name="msapplication-navbutton-color" content="#525ECA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#525ECA">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+  
+      <!-- Полключение стилей компонентов (на бэке необходимо удалить allComponents.css)--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/no-critical/style.css");-->
+      <noscript>
+        <link href="css/bundle.min.css" rel="stylesheet">
+      </noscript>
+      <!-- Подключение стилей покомпонентно-->
+      <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/wide-single-block/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/promo-block/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/youtube/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/box-plate/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/form-block/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/animation/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/wide-triple-block/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/promo-block2/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/form2-block/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/footer/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/modal/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="./components-template/no-critical/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    </head>
+  <body class="no-js stub">
+    <script>
+      document.querySelector('body').classList.remove('no-js');
+      
+    </script>
+    <div class="wrapper"><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/header/script.min.js");-->
+      <div class="header">
+        <div class="header-container container">
+          <div class="col-md-12">
+            <div class="header-main"><a class="logo" href="#" aria-label="На главную"><img class="logo__img" src="images/logo.svg" alt="logo"></a><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/menu/script.min.js");-->
+              <ul class="menu js-header-menu">
+                <li class="menu__item js-nav"><a class="link js-nav-link" href="#why-us">Почему мы</a>
+                </li>
+                <li class="menu__item js-nav"><a class="link js-nav-link" href="#examples">Примеры быстрых магазинов</a>
+                </li>
+                <li class="menu__item js-nav"><a class="link js-nav-link" href="#speed">На что влияет скорость</a>
+                </li>
+                <li class="menu__item js-nav"><a class="link js-nav-link" href="#our-methods">Наш подход</a>
+                </li>
+              </ul>
+              <div class="social-list"><a class="social" href="#" aria-label="facebook">
+                  <svg class="icon social__icon" style="width: 30px; height: 30px;">
+                    <use xlink:href="./images/sprite.svg#fb"/>
+                  </svg></a><a class="social" href="#" aria-label="linkedin">
+                  <svg class="icon social__icon" style="width: 30px; height: 30px;">
+                    <use xlink:href="./images/sprite.svg#in"/>
+                  </svg></a></div><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/menu/script.min.js");-->
+              <div class="burger js-burger">
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="first-screen">
+          <picture class="first-screen-bg">
+            <source media="(max-width: 460px)" srcset="images/fs-bg-460w.jpg">
+            <source media="(min-width: 461px)" srcset="images/fs-bg.jpg"><img src="images/fs-bg.jpg" alt="img">
+          </picture>
+          <div class="container">
+            <div class="first-screen__body">
+              <div class="first-screen__text-col">
+                <h1>Поддержка и ускорение сайтов на 1С-Битрикс</h1>
+                <ul class="fs-list">
+                  <li class="fs-list__item">Ваш сайт медленно работает?</li>
+                  <li class="fs-list__item">SEO-специалисты требуют ускорить сайт ради лучшего ранжирования?</li>
+                  <li class="fs-list__item">Вы не уверены в компетентности вашего разработчика, Ваш сайт падает от нагрузок, а обмены идут очень долго?</li>
+                </ul>
+                <div class="text-20">Мы все исправим.</div>
+              </div>
+              <div class="first-screen__form-col">
+                <div class="fs-form">
+                  <div class="fs-form__title">
+                    <div class="fs-form__title-head">Отправьте запрос на поддержку</div>
+                    <div class="fs-form__title-descr">Мы ответим Вам в течение дня и определим правильный вариант поддержки Вашего сайта</div>
+                  </div>
+                  <div class="fs-form__body">
+                    <form class="form" id="js_lazy-load-validation-1" enctype="multipart/form-data" method="POST" action="#" autocomplete="on">
+                      <div class="form-group">
+                        <input class="form-control" type="text" id="ID4321500843" name="FIELD-name" placeholder="Имя" required="required" data-bv-field="FIELD-name" data-bv-message="Укажите Ваше имя">
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" type="email" id="ID9146841438" name="FIELD-email" placeholder="E-mail" required="required" data-bv-field="FIELD-email" data-bv-message="Укажите свой e-mail" data-bv-emailaddress-message="E-mail введен некорректно">
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" type="tel" id="ID4716193649" name="NAME4716193649" placeholder="№ телефона" required="required" data-bv-notempty-message="Это обязательное поле" data-bv-regexp-message="Телефон введен некорректно">
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" type="text" id="ID7122754818" name="FIELD-web-address" placeholder="Адрес сайта" required="required" data-bv-field="FIELD-web-address" data-bv-message="Укажите адрес сайта" data-bv-emailaddress-message="Адрес сайта введен некорректно">
+                      </div>
+                      <button class="btn btn-primary" href="#modal-success" data-toggle="modal"><span>Отправить</span></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="no-critical"><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/wide-single-block/style.css");-->
+          <div class="wide-single-block" id="why-us">
+            <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/1c-bitrix.png), linear-gradient(transparent, transparent)"></span>
+            </div>
+            <div class="container">
+              <h2 class="wide-single-block__title">"Битрикс медленно работает".</h2>
+              <div class="wide-single-block__text">К сожалению, на рынке веб-разработки среди владельцев интернет-магазинов сложилось такое мнение. В первую очередь - это следствие малого опыта разработчиков, которые используют коробочные решения для больших проектов или просто не понимают, как устроен этот фреймворк.</div>
+              <div class="wide-single-block__text bold">Битрикс - это универсальный инструмент для создания проектов любой сложности. Сегодня на рынке СНГ - это наиболее формализованная мощная и надежная CMS среди конкурентов.</div>
+              <div class="animate-field hidden-md-down">
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+                <div class="el"></div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/promo-block/style.css");-->
+          <div class="promo-block-wrap" id="examples">
+            <div class="promo-block-wrap__bg">
+              <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/bg-feedback.png), linear-gradient(transparent, transparent)"></span>
+              </div>
+            </div>
+            <div class="container">
+              <div class="parallax">
+                <div class="promo-block">
+                  <h2 class="promo-block__title">Мы разрабатываем самые быстрые сайты</h2>
+                  <div class="promo-block__body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="text">Мы являемся профессиональным интегратором веб-проектов на CMS 1C-Битрикс и имеем статус «Золотой партнер».</div>
+                        <div class="text">Мы детально изучили требования Google и обеспечиваем качественную реализацию проекта на всех уровнях: выбор хостинга, производительная верстка, качественный код с оптимизацией запросов к базам данных. Также мы используем собственные модули по оптимизации изображений и конвертации каталогов.</div>
+                        <div class="text bold">Всем нашим партнерам и клиентам мы гарантируем ускорение их сайта до цифр выше 90% в Google pagespeed insight при соблюдении всех наших рекомендаций.</div>
+                      </div>
+                      <div class="col-lg-6 col-md-12"><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/youtube/script.min.js");--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/youtube/style.css");-->
+                        <div class="video-card" data-target="#videoPlay">
+                          <div class="video-card__img"><span class="lazy-img-wrap"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/youtube.jpg" alt="img"></span>
+                            <figure>
+                              <div class="youtube js-page-video" data-embed="9k64HGiMm5U">
+                                <div class="play-button">
+                                  <div class="play-button__icon"></div>
+                                </div>
+                              </div>
+                            </figure>
+                          </div>
+                        </div>
+                        <p class="bold">domotehnika.by - сравнение нашего сайта со скоростью загрузки конкурентов</p>
+                        <p>На десткопе главная страница загружается всего за 2,1 секунды, что в 10 раз быстрее некоторых конкурентов.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="box-plate"><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item domotehnika">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/dm-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/dm_-_pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 98 / Mobile - 91</div>
+                            <div class="title">domotehnika.by</div>
+                            <div class="descr">Интернет-магазин бытовой техники</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fdomotehnika.by%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item ibeauty">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/ibeauty-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/ibeauty_-_pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 99 / Mobile - 91</div>
+                            <div class="title">ibeauty.ru</div>
+                            <div class="descr">Интернет-гипермаркет парфюмерии</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fibeauty.ru%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item proofline">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/proof-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/pr-pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 98 / Mobile - 90</div>
+                            <div class="title">proofline.uz</div>
+                            <div class="descr">Интернет-магазин защитной одежды из Узбекистана</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fproofline.uz%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item ipay">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/ipay-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/ipay-pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 100 / Mobile - 91</div>
+                            <div class="title">ipay.by</div>
+                            <div class="descr">Корпоративный сайт платежной системы</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fipay.by%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item partizany">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/part-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/prtz-pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 97 / Mobile - 93</div>
+                            <div class="title">partizany.by</div>
+                            <div class="descr">Поисковый сервис родственников-партизан со сложной анимацией</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fpartizany.by%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/box-plate/style.css");-->
+                        <div class="box-plate__item promo">
+                          <div class="fs-img"><span class="lazy-img-wrap fs-img__main"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/promo-min.jpg" alt="img"></span><span class="lazy-img-wrap fs-img__hover"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/belveb-pg-min.png" alt="img"></span>
+                          </div>
+                          <div class="box-plate__body">
+                            <div class="sub-title">Desktop - 100 / Mobile - 90</div>
+                            <div class="title">promo.belveb.by</div>
+                            <div class="descr">Сайт акционной игры для банка БелВэб</div><a class="btn btn-primary animate-blink" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?hl=RU&amp;url=https%3A%2F%2Fpromo.belveb.by%2F&amp;tab=desktop"><span>Проверить</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/form-block/style.css");--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/animation/style.css");-->
+          <div class="form-block">
+            <div class="container">
+              <div class="form-block__body">
+                <h3 class="form-block__title">Отправьте заявку</h3>
+                <form class="form" id="js_lazy-load-validation-2" enctype="multipart/form-data" method="POST" action="#" autocomplete="on">
+                  <div class="form-group">
+                    <label class="form-control-label" for="ID3343053305">Имя<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="text" id="ID3343053305" name="FIELD-name" placeholder="Имя" required="required" data-bv-field="FIELD-name" data-bv-message="Укажите Ваше имя">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="ID486368896">Почтовый адрес<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="email" id="ID486368896" name="FIELD-email" placeholder="E-mail" required="required" data-bv-field="FIELD-email" data-bv-message="Укажите свой e-mail" data-bv-emailaddress-message="E-mail введен некорректно">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="ID5289671530">№ телефона<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="tel" id="ID5289671530" name="NAME5289671530" placeholder="№ телефона" required="required" pattern="\d [0-9]" data-bv-notempty-message="Это обязательное поле" data-bv-regexp-message="Телефон введен некорректно">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="ID9608957141">Адрес сайта<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="text" id="ID9608957141" name="FIELD-web-address" placeholder="Адрес сайта" required="required" data-bv-field="FIELD-web-address" data-bv-message="Укажите адрес сайта" data-bv-emailaddress-message="Адрес сайта введен некорректно">
+                  </div>
+                  <button class="btn btn-outline" href="#modal-success" data-toggle="modal"><span>Отправить</span></button>
+                </form>
+              </div>
+              <div class="animate-field hidden-md-down">
+                <div class="el-line-big">
+                  <div class="el-line-big__ball"><span class="lazy-img-wrap"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/method-ico-1.png" alt="img"></span>
+                  </div>
+                </div>
+                <div class="els">
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                  <div class="el"></div>
+                </div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/wide-triple-block/style.css");-->
+          <div class="wide-triple-block" id="speed">
+            <div class="container">
+              <h2 class="wide-triple-block__title">На что влияет скорость?</h2>
+              <div class="wide-triple-block__text">Высокая скорость работы - это не просто требование ваших пользователей, это технологическая необходимость.</div>
+              <div class="triple-block">
+                <div class="triple-block__item">
+                  <div class="tb-icon">
+                    <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/ic-effect.svg), linear-gradient(transparent, transparent)"></span>
+                    </div>
+                  </div>
+                  <div class="tb-head">Эффективность рекламы</div>
+                  <div class="tb-body">Переходя на ваш медленный сайт, пользователи могут быстро закрыть его. Как следствие - вы просто сливаете свои рекламные бюджеты</div>
+                </div>
+                <div class="triple-block__item">
+                  <div class="tb-icon">
+                    <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/ic-deep.svg), linear-gradient(transparent, transparent)"></span>
+                    </div>
+                  </div>
+                  <div class="tb-head">Глубина просмотра</div>
+                  <div class="tb-body">Вероятность продажи на вашем сайте напрямую зависит от количества просмотренных страниц и качества проведенного времени на сайте</div>
+                </div>
+                <div class="triple-block__item">
+                  <div class="tb-icon">
+                    <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/ic-index.svg), linear-gradient(transparent, transparent)"></span>
+                    </div>
+                  </div>
+                  <div class="tb-head">Индексация сайта</div>
+                  <div class="tb-body">И Google, и Яндекс постоянно заявляют, что сегодня скорость работы особенно в мобильной выдаче напрямую влияют на ваши позиции в ранжировании.</div>
+                </div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/promo-block/style.css");--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/promo-block2/style.css");--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/animation/style.css");--><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/animation/script.min.js");-->
+          <div class="promo-block2-wrap" id="our-methods">
+            <div class="promo-block2-wrap__bg">
+              <div class="lazy-img-wrap"><span class="lazy-img" data-bg="url(images/speed-bg.jpg), linear-gradient(transparent, transparent)"></span>
+              </div>
+            </div>
+            <div class="container">
+              <div class="parallax">
+                <div class="promo-block2">
+                  <h2 class="promo-block2__title">Как мы добиваемся таких результатов?</h2>
+                  <div class="promo-block2__sub-title">Высокие показатели по скорости не могут быть достигнуты только качественных кодом или мощным сервером. <br> Оптимизация сайта - это совокупность всех факторов веб-разработки, недоработка любого из них обязательно приведет к замедлению работы сайта</div>
+                  <div class="promo-block2__body">
+                    <div class="box-plate">
+                      <div class="box-plate__item">
+                        <div class="title">Технологичная верстка</div>
+                        <div class="descr">Мы используем собственный сборщик, отложенную подгрузку скрытых блоков, сжатие всех элементов и много другое. Наша верстка всегда адаптивная и имеет высокий отклик взаимодействия. Каждый блок нашего демо-сайта сверстан с учетом скорости загрузки.</div>
+                      </div>
+                      <div class="box-plate__item">
+                        <div class="title">Правильный код</div>
+                        <div class="descr">Мы являемся экспертами в 1С-Битрикс с опытом разработки сложных высоконагруженных проектов. Мы всегда проходим монитор качества и делаем код-ревью по внутренним чек-листам. Любой наш проект сделан без кастомизации ядра Битрикс.</div>
+                      </div>
+                      <div class="box-plate__item">
+                        <div class="title">Оптимизация изображений</div>
+                        <div class="descr">Помимо стандартных Битрикс-инструментов мы используем собственный модуль сжатия изображений с конвертацией их в легкий webp-формат. Изображения товаров в хорошем качестве весят всего по 5-10 килобайт.</div>
+                      </div>
+                      <div class="box-plate__item">
+                        <div class="title">Подключение др. сервисов</div>
+                        <div class="descr">Несмотря на заявляемую "асинхронность" загрузки, все внешние чаты, колл-трекеры, пиксели и метрики сильно влияют на скорость загрузки. Мы умеем решать такие задачи, используя разные варианты подгрузки внешних сервисов в обход.</div>
+                      </div>
+                      <div class="box-plate__item">
+                        <div class="title">Оптимизация запросов</div>
+                        <div class="descr">Неверная архитектура проекта, игнорирование кеша, использование штатных инфоблоков или неверное их подключение создают большую нагрузку на БД сайта. Мы уверенно оптимизируем запросы и время на их отработку.</div>
+                      </div>
+                      <div class="box-plate__item">
+                        <div class="title">Настроенный сервер</div>
+                        <div class="descr">Мы сотрудничаем с ведущими хостинг-провайдерами и постоянно меряем мощности хостингов именно под Битрикс. Кроме того, мы имеем в штате своего серверного администратора с битрикс-сертификатом "Системное администрирование".</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="animate-field hidden-md-down">
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                    <div class="el"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/form2-block/style.css");-->
+          <div class="form2-block">
+            <div class="container">
+              <h2 class="form2-block__title">Хотите разогнать свой сайт или создать новый?</h2>
+              <div class="row">
+                <div class="col-lg-7 col-md-12"><!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/youtube/script.min.js");--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/youtube/style.css");-->
+                  <div class="video-card" data-target="#videoPlay">
+                    <div class="video-card__img"><span class="lazy-img-wrap"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/youtube.jpg" alt="img"></span>
+                      <figure>
+                        <div class="youtube js-page-video" data-embed="9k64HGiMm5U">
+                          <div class="play-button">
+                            <div class="play-button__icon"></div>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <p>Посмотрите, как один из наших сайтов domotehnika.by загружается быстрее конкурентов почти в 10 раз. Такой же результат и на мобильной выдаче.</p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                  <div class="fs-form">
+                    <div class="fs-form__title">Мы ответим вам в течение дня и определим правильный вариант поддержки или разработки вашего сайта</div>
+                    <form class="form" id="js_lazy-load-validation-3" enctype="multipart/form-data" method="POST" action="#" autocomplete="on">
+                      <div class="form-group">
+                        <label class="form-control-label" for="ID8211496635">Имя<span class="label-required">*</span>
+                        </label>
+                        <input class="form-control" type="text" id="ID8211496635" name="FIELD-name" placeholder="Имя" required="required" data-bv-field="FIELD-name" data-bv-message="Укажите Ваше имя">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-control-label" for="ID8762302507">Почтовый адрес<span class="label-required">*</span>
+                        </label>
+                        <input class="form-control" type="email" id="ID8762302507" name="FIELD-email" placeholder="E-mail" required="required" data-bv-field="FIELD-email" data-bv-message="Укажите свой e-mail." data-bv-emailaddress-message="E-mail введен некорректно">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-control-label" for="ID725336087">№ телефона<span class="label-required">*</span>
+                        </label>
+                        <input class="form-control" type="tel" id="ID725336087" name="NAME725336087" placeholder="№ телефона" required="required" pattern="\d [0-9]" data-bv-notempty-message="Это обязательное поле" data-bv-regexp-message="Телефон введен некорректно">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-control-label" for="ID934881109">Адрес сайта<span class="label-required">*</span>
+                        </label>
+                        <input class="form-control" type="text" id="ID934881109" name="FIELD-web-address" placeholder="Адрес сайта" required="required" data-bv-field="FIELD-web-address" data-bv-message="Укажите адрес сайта" data-bv-emailaddress-message="Адрес сайта введен некорректно">
+                      </div>
+                      <button class="btn btn-primary" type="submit"><span>Отправить</span></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/footer/style.css");-->
+          <div class="footer-wrap">
+            <div class="container">
+              <div class="footer">
+                <div class="footer__col"><a class="logo" href="#" aria-label="На главную"><span class="lazy-img-wrap"><img class="lazy-img logo__img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/SLAM_logo-color.svg" alt="img"></span></a>
+                  <div class="copy"> <span>© </span>
+                    <div class="copy__name">ООО «Слэмсофт», 2020</div>
+                  </div>
+                </div>
+                <div class="footer__col"><a href="tel:+375445644564">+375 44 564-45-64</a><a href="tel:+375447119432">+375 44 711-94-32</a></div>
+                <div class="footer__col"><a href="mailto:info@slam.by" target="_blank">info@slam.by</a>
+                  <div class="social-list"><a class="social" href="#" aria-label="facebook">
+                      <svg class="icon social__icon" style="width: 30px; height: 30px;">
+                        <use xlink:href="./images/sprite.svg#fb"/>
+                      </svg></a><a class="social" href="#" aria-label="linkedin">
+                      <svg class="icon social__icon" style="width: 30px; height: 30px;">
+                        <use xlink:href="./images/sprite.svg#in"/>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Модальные окна--><!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/modal/style.css");-->
+    <div class="modal fade modal-success" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="modal-success" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Запрос отправлен</div>
+          </div>
+          <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="content order-registration-content">
+              <p style="text-align: center">Мы свяжемся с Вами в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Либы, используемые на всех страницах-->
+    <script src="./js/jquery/jquery-3.3.1.min.js" defer></script>
+    <script src="./js/vendor/svg4everybody.js" defer></script>
+    <script src="./js/vendor/noframework.waypoints.min.js" defer></script>
+    <!-- Скрипты компонентов только для этой страницы-->
+    <!-- Вялая загрузка картинок-->
+    <script src="./js/vendor/lazyload.min.js" defer></script>
+    <!-- Либы, используемые только на этой странице-->
+    <!-- Основные скрипты для всех страниц-->
+    <script src="./js/app.min.js" defer></script>
+    <!-- Скрипты компонентов только для этой страницы-->
+    <script src="./components-template/header/script.min.js" defer="defer"></script>
+    <script src="./components-template/menu/script.min.js" defer="defer"></script>
+    <script src="./components-template/youtube/script.min.js" defer="defer"></script>
+    <script src="./components-template/animation/script.min.js" defer="defer"></script>
+    
+  </body>
+</html>

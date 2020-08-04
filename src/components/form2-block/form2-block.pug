@@ -1,0 +1,58 @@
++include-style('form2-block')
+.form2-block
+	.container
+		h2.form2-block__title Хотите разогнать свой сайт или создать новый?
+		.row
+			.col-lg-7.col-md-12
+				+video-card({
+					embed: "9k64HGiMm5U"
+				})
+				p Посмотрите, как один из наших сайтов domotehnika.by загружается быстрее конкурентов почти в 10 раз. Такой же результат и на мобильной выдаче.
+			.col-lg-5.col-md-12
+				.fs-form
+					.fs-form__title Мы ответим вам в течение дня и определим правильный вариант поддержки или разработки вашего сайта
+					form#js_lazy-load-validation-3(enctype='multipart/form-data', method='POST', action='#', autocomplete='on', ).form
+						+input({
+							small: false,
+							required: true,
+							placeholder: 'Имя',
+							label: 'Имя'
+						})(type='text',
+						name='FIELD-name',
+						data-bv-field='FIELD-name',
+						data-bv-message='Укажите Ваше имя',
+						required)
+						+input({
+							small: false,
+							required: true,
+							placeholder: 'E-mail',
+							label: 'Почтовый адрес'
+						})(type='email',
+						name='FIELD-email',
+						data-bv-field='FIELD-email',
+						data-bv-message='Укажите свой e-mail.',
+						data-bv-emailaddress-message='E-mail введен некорректно',
+						required)
+						+input({
+							small: false,
+							placeholder: '№ телефона',
+							required: true,
+							label: '№ телефона'
+						})(type='tel',
+						pattern='\\d [0-9]',
+						data-bv-notempty-message="Это обязательное поле",
+						data-bv-regexp-message="Телефон введен некорректно"
+						required)
+						+input({
+							small: false,
+							placeholder: 'Адрес сайта',
+							required: true,
+							label: 'Адрес сайта'
+						})(type='text',
+						name='FIELD-web-address',
+						data-bv-field='FIELD-web-address',
+						data-bv-message='Укажите адрес сайта',
+						data-bv-emailaddress-message='Адрес сайта введен некорректно',
+						required)
+						button.btn.btn-primary(type='submit')
+							span Отправить

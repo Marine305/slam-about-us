@@ -1,0 +1,14 @@
+mixin input-form-control(args = {})
+	- var id = Math.floor(Math.random() * 9999999999)
+	input.form-control(
+	type= args.type || 'text',
+	id= 'ID' + id,
+	name= 'NAME' + id,
+	aria-describedby= args.small && 'IDHELP' + id,
+	placeholder= args.placeholder || ' ',
+	required= args.required ? true : false,
+	value= args.value,
+	)&attributes(attributes)
+	if (args.small)
+		small.form-text.text-muted(id= 'IDHELP' + id)= args.small
+

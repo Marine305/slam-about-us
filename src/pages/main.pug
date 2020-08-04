@@ -1,0 +1,41 @@
+extends ../layout/layout
+
+block vars
+	- var bodyClass = ''
+	- var footerClass = ''
+	- var headerClass = ''
+	- var pageTitle = 'Главная'
+	- var dir = './'
+	- var layout = ''
+	- var componentsList = []
+	- var componentsCriticalList = []
+	- var componentsScriptsList = []
+	- var vendorScriptsList = []
+
+block main
+	include ../components/first-screen/first-screen
+	.no-critical
+		include ../components/we-partner-block/we-partner-block
+		include ../components/speed-block/speed-block
+		//- include ../components/form-block/form-block
+		//- include ../components/wide-triple-block/wide-triple-block
+		//- include ../components/promo-block2/promo-block2
+		//- include ../components/form2-block/form2-block
+		include ../components/footer/footer
+
+block popups
+	include ../components/modal/modal-success/modal-success
+
+
+block componentsCriticalStyles
+	+componentsCriticalStyles-includer()
+block vendorScripts
+	+vendorScripts-includer()
+
+block componentsStyles
+	+style-includer()
+
+block componentsScripts
+	+componentsScripts-includer()
+
+block scripts

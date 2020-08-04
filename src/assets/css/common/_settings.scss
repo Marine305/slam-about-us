@@ -1,0 +1,76 @@
+// Grid
+$xl: 1200px;
+$lg: 1024px;
+$md: 768px;
+$sm: 576px;
+
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+);
+
+$container-max-widths: (
+  sm: 575px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+$c-size: 16px;
+$f-head: "Circe", Helvetica, Arial, sans-serif;
+$f-main: "Circe", Helvetica, Arial, sans-serif;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+// Colors
+$c-main: #282828;
+$c-sec: #d15645;
+
+$c-bg: #ccc;
+$c-bg2: rgba(65, 64, 102, 0.93);
+$c-text: #282828;
+$c-blue: #a5a4ef;
+$c-link: #798089;
+
+$trp: transparent;
+
+$blue: #234399;
+$red: #f45057;
+$green: #379f2f;
+$yellow: #e8a12b;
+$white: #fff;
+$black: #000;
+
+$colors: (
+  red: $c-main,
+);
+
+$c-main1: #7a4281;
+$c-main2: #e48023;
+
+@mixin mainGrad {
+  background: linear-gradient(to right, $c-main1, $c-main2);
+}
+
+@mixin textGrad($from: $c-main1, $to: $c-main2) {
+  color: transparent;
+  background-image: linear-gradient(to right, $from, $to);
+  -webkit-background-clip: text;
+}
+

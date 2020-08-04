@@ -1,0 +1,44 @@
+-
+	var menuItems = [
+		{
+			'href': '/about-us.html',
+			'link': 'О студии'
+		},
+		{
+			'href': '#',
+			'link': 'Услуги'
+		},
+		{
+			'href': '#',
+			'link': 'Наши продукты'
+		},
+		{
+			'href': '#',
+			'link': 'Портфолио'
+		},
+		{
+			'href': '#',
+			'link': 'Контакты'
+		},
+	]
+
+
+mixin mainMenu(active)
+	+include-script('menu')
+	//- +include-style('menu')
+	ul.menu.js-header-menu
+		each mainMenu in menuItems
+			if mainMenu.href === active
+				li.menu__item.js-nav.active
+					span.link.js-nav-link.active!= mainMenu.link
+			else
+				li.menu__item.js-nav
+					a.link.js-nav-link(href=`${mainMenu.href}`)!= mainMenu.link
+
+mixin burger(active)
+	+include-script('menu')
+	//- +include-style('menu')
+	.burger.js-burger
+		.burger__item
+		.burger__item
+		.burger__item

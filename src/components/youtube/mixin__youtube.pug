@@ -1,0 +1,11 @@
+mixin video-card(data)
+	+include-script('youtube')
+	+include-style('youtube')
+	-data = data || {}
+	.video-card(data-target="#videoPlay")&attributes(attributes)
+		.video-card__img
+			+lazy-img({img: './images/youtube.jpg'})
+			figure
+				.youtube.js-page-video(data-embed=data.embed)
+					.play-button
+						.play-button__icon

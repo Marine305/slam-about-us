@@ -1,0 +1,37 @@
+//- миксин подключает стили компонентов на страницу
+
+//- подключение общих критических стилей
+mixin style-includer()
+
+	.js-style-components
+		// Полключение стилей компонентов (на бэке необходимо удалить allComponents.css)
+		//- Последним файлом добавляем отображение не критических блоков для компонентного подхода
+		+include-style('no-critical')
+		//- Подключение стилей в одном файле
+		//-link(href='css/bundle.min.css' rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'")
+		noscript
+			link(href='css/bundle.min.css' rel='stylesheet')
+		// Подключение стилей покомпонентно
+		//-<!--[if components]>
+		link(rel='preload' href= dir + 'styles.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+		link(rel='preload' href= dir + 'css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+		each item in componentsList
+			link(rel='preload' href= dir + 'components-template/' + item + '/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+		//-<![endif]-->
+
+//- подключение критический стилей отдельных компонентов
+mixin componentsCriticalStyles-includer()
+
+	each item in componentsCriticalList
+		link(rel="stylesheet" href= '../../local/templates/html/css/' + item + '/style.css' inline)
+
+
+//- подключение скриптов отдельных компонентов
+mixin componentsScripts-includer()
+	each item in componentsScriptsList
+		script(src= dir + 'components-template/' + item + '/script.min.js' defer)
+
+//- подключение скриптов отдельных вендоров
+mixin vendorScripts-includer()
+	each item in vendorScriptsList
+		script(src=`./js/vendor/${item}` defer)

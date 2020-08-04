@@ -1,0 +1,59 @@
+mixin nav(args= {})
+	+include-script('nav')
+	//- ПРИМЕР
+		+nav(
+			{
+				class: 'CLASS1',
+				title: '',
+				compress: false,
+				list: [
+					{
+						name: 'NAME1',
+						nav: false
+					},
+					{
+						name: 'NAME2',
+						nav: {
+
+						}
+					}
+				]
+			}
+		)
+			.BLOCK
+
+	div(
+	class= args.class && args.class
+	class= args.compress && args.class && args.class + '--compress'
+	class= args.compress && 'js-nav-compress'
+	data-title= args.title && args.title)&attributes(attributes)
+		if (args.close)
+			button(
+			type='button'
+			class= args.class && args.class + '-close'
+			aria-label='Закрыть')
+		ul(
+		class= args.class && args.class + '-list'
+		class= 'js-nav-list')
+			if (args.list)
+				each item in args.list
+					li(
+					class= args.class && args.class + '-item'
+					class= item.nav && 'has-nav'
+					class= item.disabled && 'disabled'
+					class= item.active && 'active'
+					class= 'js-nav-item')
+						if (item.span || item.disabled)
+							span(class= args.class && args.class + '-link')= item.name
+						else
+							a(
+							href=args.href || '#'
+							class= args.class && args.class + '-link'
+							aria-label= item.name)= item.name
+						if (item.nav)
+							+nav(item.nav)
+						block
+
+		if (args.compress)
+			div(class= args.class && args.class + '-abroad js-nav-abroad')
+				ul(class= args.class && args.class + '-abroad-list js-nav-list')

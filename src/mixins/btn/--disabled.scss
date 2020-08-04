@@ -1,0 +1,18 @@
+
+.btn[disabled], .btn.disabled {
+	background: #ccc !important;
+	border-color: #ccc !important;
+	cursor: no-drop !important;
+	color: #FFFFFF !important;
+	box-shadow: none !important;
+	pointer-events: none;
+
+
+	&:hover, &:active {
+		background: #ccc !important;
+		border-color: #ccc !important;
+		color: #FFFFFF !important;
+		box-shadow: none !important;
+		
+	}
+}

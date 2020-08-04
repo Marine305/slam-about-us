@@ -1,0 +1,37 @@
+@import "../../assets/css/common/components-import";
+.speed-block {
+	&__icon {
+		margin-bottom: 40px;
+	}
+}
+.speed-box {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	&__item {
+		width: 50%;
+		margin: 5px 0;
+
+		span {
+			width: calc(100% - 30px);
+			position: relative;
+			margin-left: 30px;
+			border-bottom: 1px solid rgba(102, 102, 102, 0.25);
+			font-size: 18px;
+			line-height: 1.2;
+			letter-spacing: 0.02em;
+			// padding: 5px 0;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -42px;
+				width: 25px;
+				height: 18px;
+				background: url("data:image/svg+xml,%3Csvg width='25' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF8600' d='M0 6.879l3.996-4.013 11.073 11.121L11.073 18z'/%3E%3Cpath fill='%23FF8600' d='M21.005 0L25 4.013 11.074 18l-3.996-4.013z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+			}
+		}
+		
+	}
+	
+}

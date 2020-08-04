@@ -1,0 +1,14 @@
+.no-critical {
+	max-height: none!important;
+	position: relative!important;
+	min-height: auto!important;
+	pointer-events: auto!important;
+	overflow: unset!important;
+
+	&:before {
+		display: none!important;
+	}
+	> * {
+		opacity: 1!important;
+	}
+}

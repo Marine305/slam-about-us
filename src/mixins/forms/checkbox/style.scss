@@ -1,0 +1,67 @@
+// // ICON STATE
+// $default: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7.5C1 3.91015 3.91015 1 7.5 1H16.5C20.0899 1 23 3.91015 23 7.5V16.5C23 20.0899 20.0899 23 16.5 23H7.5C3.91015 23 1 20.0899 1 16.5V7.5Z' fill='white' stroke='%23E4E9E1' stroke-width='2'/%3E%3C/svg%3E%0A");
+// $default-checked: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7.5C1 3.91015 3.91015 1 7.5 1H16.5C20.0899 1 23 3.91015 23 7.5V16.5C23 20.0899 20.0899 23 16.5 23H7.5C3.91015 23 1 20.0899 1 16.5V7.5Z' fill='white' stroke='%23E4E9E1' stroke-width='2'/%3E%3Crect x='5.4082' y='12.0293' width='3' height='7.00865' rx='1.5' transform='rotate(-45 5.4082 12.0293)' fill='%236BA533'/%3E%3Crect x='16.4404' y='6.78418' width='3' height='11.3834' rx='1.5' transform='rotate(45 16.4404 6.78418)' fill='%236BA533'/%3E%3C/svg%3E%0A");
+// $disabled: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 1H16.5C20.0899 1 23 3.91015 23 7.5V16.5C23 20.0899 20.0899 23 16.5 23H7.5C3.91015 23 1 20.0899 1 16.5V7.5C1 3.91015 3.91015 1 7.5 1Z' fill='%23F4F7F2' stroke='%23E4E9E1' stroke-width='2'/%3E%3C/svg%3E%0A");
+// $disabled-checked: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 1H16.5C20.0899 1 23 3.91015 23 7.5V16.5C23 20.0899 20.0899 23 16.5 23H7.5C3.91015 23 1 20.0899 1 16.5V7.5C1 3.91015 3.91015 1 7.5 1Z' fill='%23F4F7F2' stroke='%23E4E9E1' stroke-width='2'/%3E%3Crect x='5.40796' y='12.0293' width='3' height='7.00865' rx='1.5' transform='rotate(-45 5.40796 12.0293)' fill='%23C3C9BE'/%3E%3Crect x='16.4404' y='6.78442' width='3' height='11.3834' rx='1.5' transform='rotate(45 16.4404 6.78442)' fill='%23C3C9BE'/%3E%3C/svg%3E%0A");
+
+// .checkbox {
+// 	position: relative;
+
+// 	input {
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		width: 1px;
+// 		height: 1px;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 	}
+
+// 	label {
+// 		display: block;
+// 		padding: 0 0 0 38px;
+// 		font-style: normal;
+// 		font-weight: normal;
+// 		font-size: 14px;
+// 		line-height: 24px;
+// 		color: #515A60;
+// 		cursor: pointer;
+// 	}
+
+// 	label:before {
+// 		content: '';
+// 		width: 24px;
+// 		height: 24px;
+// 		display: block;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		user-select: none;
+
+// 		// ICON PROPS
+// 		border-radius: 6px;
+// 		background-size: 24px 24px;
+// 		background-repeat: no-repeat;
+// 		background-position: 0 0;
+// 		background-image: $default;
+// 	}
+
+// 	input:not(:disabled) ~ label:hover:before {
+// 		box-shadow: 0 0 5px rgba(0,0,0,.1);
+// 	}
+
+// 	input:disabled ~ label {
+// 		cursor: no-drop;
+// 	}
+
+// 	input:checked ~ label:before {
+// 		background-image: $default-checked;
+// 	}
+
+// 	input:disabled ~ label:before {
+// 		background-image: $disabled;
+// 	}
+// 	input:checked:disabled ~ label:before {
+// 		background-image: $disabled-checked;
+// 	}
+// }

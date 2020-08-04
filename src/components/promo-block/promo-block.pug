@@ -1,0 +1,79 @@
++include-style('promo-block')
+
+.promo-block-wrap#examples
+	.promo-block-wrap__bg
+		+lazy-bg({
+			img: 'images/bg-feedback.png'
+		})
+	.container
+		.parallax
+			.promo-block
+				h2.promo-block__title Мы разрабатываем самые быстрые сайты
+				.promo-block__body
+					.row
+						.col-lg-6.col-md-12
+							.text Мы являемся профессиональным интегратором веб-проектов на CMS 1C-Битрикс и имеем статус «Золотой партнер».
+							.text Мы детально изучили требования Google и обеспечиваем качественную реализацию проекта на всех уровнях: выбор хостинга, производительная верстка, качественный код с оптимизацией запросов к базам данных. Также мы используем собственные модули по оптимизации изображений и конвертации каталогов.
+							.text.bold Всем нашим партнерам и клиентам мы гарантируем ускорение их сайта до цифр выше 90% в Google pagespeed insight при соблюдении всех наших рекомендаций.
+						.col-lg-6.col-md-12
+							+video-card({
+								embed: "9k64HGiMm5U"
+							})
+							p.bold domotehnika.by - сравнение нашего сайта со скоростью загрузки конкурентов
+							p На десткопе главная страница загружается всего за 2,1 секунды, что в 10 раз быстрее некоторых конкурентов.
+					.row
+						.box-plate
+							+box-item({
+								class: 'domotehnika',
+								src: 'images/dm-min.jpg',
+								srchover: 'images/dm_-_pg-min.png',
+								subtitle: 'Desktop - 98 / Mobile - 91',
+								title: 'domotehnika.by',
+								descr: 'Интернет-магазин бытовой техники',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fdomotehnika.by%2F&tab=desktop'
+							})
+							+box-item({
+								class: 'ibeauty',
+								src: 'images/ibeauty-min.jpg',
+								srchover: 'images/ibeauty_-_pg-min.png',
+								subtitle: 'Desktop - 99 / Mobile - 91',
+								title: 'ibeauty.ru',
+								descr: 'Интернет-гипермаркет парфюмерии',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fibeauty.ru%2F&tab=desktop'
+							})
+							+box-item({
+								class: 'proofline',
+								src: 'images/proof-min.jpg',
+								srchover: 'images/pr-pg-min.png',
+								subtitle: 'Desktop - 98 / Mobile - 90',
+								title: 'proofline.uz',
+								descr: 'Интернет-магазин защитной одежды из Узбекистана',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fproofline.uz%2F&tab=desktop'
+							})
+							+box-item({
+								class: 'ipay',
+								src: './images/ipay-min.jpg',
+								srchover: './images/ipay-pg-min.png',
+								subtitle: 'Desktop - 100 / Mobile - 91',
+								title: 'ipay.by',
+								descr: 'Корпоративный сайт платежной системы',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fipay.by%2F&tab=desktop'
+							})
+							+box-item({
+								class: 'partizany',
+								src: 'images/part-min.jpg',
+								srchover: 'images/prtz-pg-min.png',
+								subtitle: 'Desktop - 97 / Mobile - 93',
+								title: 'partizany.by',
+								descr: 'Поисковый сервис родственников-партизан со сложной анимацией',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fpartizany.by%2F&tab=desktop'
+							})
+							+box-item({
+								class: 'promo',
+								src: 'images/promo-min.jpg',
+								srchover: 'images/belveb-pg-min.png',
+								subtitle: 'Desktop - 100 / Mobile - 90',
+								title: 'promo.belveb.by',
+								descr: 'Сайт акционной игры для банка БелВэб',
+								href: 'https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fpromo.belveb.by%2F&tab=desktop'
+							})

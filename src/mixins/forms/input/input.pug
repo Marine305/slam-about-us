@@ -1,0 +1,23 @@
+mixin input(args = {})
+	- var id = args.id || Math.floor(Math.random() * 9999999999)
+	.form-group(class= args.fg_mob)
+		block
+		if(args.label)
+			label.form-control-label(for= 'ID' + id class= args.label_mod)= args.label || 'label'
+				if (args.label_desc)
+					span.field-label-descr= args.label_desc
+				if (args.required)
+					span.label-required *
+		input.form-control(
+		class= args.mod
+		type= args.type || 'text',
+		id= 'ID' + id,
+		name= 'NAME' + id,
+		aria-describedby= args.small && 'IDHELP' + id,
+		placeholder= args.placeholder || ' ',
+		required= args.required ? true : false,
+		value= args.value,
+		)&attributes(attributes)
+		if (args.small)
+			small.form-text.text-muted(id= 'IDHELP' + id)= args.small
+

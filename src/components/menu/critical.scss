@@ -1,0 +1,119 @@
+@import "../../assets/css/common/components-import";
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    .link {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #7a4281;
+      line-height: 1.2;
+      white-space: nowrap;
+      transition: border 0.2s;
+      border-bottom: 1px solid transparent;
+	  font-weight: normal;
+	  letter-spacing: 0.02em;
+      &:hover {
+		color: #7a4281;
+        border-bottom: 1px solid #7a4281;
+      }
+	}
+	&.active {
+		.link {
+			color: #FF8600;
+			border-bottom: 1px solid transparent;
+		}
+	}
+  }
+//   @media (max-width: 1024px) {
+//     transform: translateX(110%);
+//     visibility: visible;
+//     opacity: 1;
+//     display: flex;
+//     flex-direction: column;
+//     overflow: auto;
+//     margin: 0;
+//     box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.3);
+//     position: absolute;
+//     z-index: 900;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     padding: 100px 0 80px 0;
+//     transition: transform 0.4s ease-in-out, width 0.6s ease-in-out;
+//     width: 0;
+//     background: #fff;
+//     height: 100vh;
+//     &__item {
+//       align-items: flex-start;
+//       border-bottom: 1px solid #eee;
+//       padding: 10px 15px;
+//       margin: 0 0 20px 0;
+//       .link {
+//         font-size: 18px;
+//         font-weight: 500;
+//         text-align: left;
+//         line-height: 1.2;
+//         white-space: normal;
+//         color: #7a4281;
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+//   &.active {
+//     transform: translateX(0);
+//     transform-origin: 0 100%;
+//     transition: transform 0.4s ease-in-out;
+//     padding: 100px 20px 80px 0;
+//     width: 300px;
+//   }
+}
+.burger {
+  width: 30px;
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 910;
+  .burger__item {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+  }
+  &.active {
+    z-index: 1000;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    .burger__item {
+      width: 32px;
+      height: 3px;
+      background: #999;
+      &:first-child {
+        transform: rotate(45deg);
+        transform-origin: 6% 50%;
+      }
+      &:nth-last-child(2n) {
+        display: none;
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+        transform-origin: 6% 50%;
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}

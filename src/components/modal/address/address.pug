@@ -1,0 +1,32 @@
++modal({
+	id: 'modal-address',
+	mod: 'modal-address',
+	title: 'Добавить/редактировать адрес',
+	header: true
+})
+	form.bv-form
+		+input({
+			placeholder: 'Адрес',
+			required: true
+		})
+		+input({
+			placeholder: 'Улица',
+			required: true
+		})
+		.row.m-md-0
+			.col-12.col-md-4.p-md-0
+				+input({
+					placeholder: 'Дом',
+					required: true
+				})
+			.col-12.col-md-4.p-md-0
+				+input({
+					placeholder: 'Корпус'
+				})
+			.col-12.col-md-4.p-md-0
+				+input({
+					placeholder: 'Квартира',
+					required: true
+				})
+
+		button.btn.btn-primary.w100p(type='submit' aria-label='Сохранить') Сохранить

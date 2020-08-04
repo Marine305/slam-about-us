@@ -1,0 +1,12 @@
+mixin include-style(name)
+	<!--Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/components-template/#{name}/style.css");-->
+	-
+		isInComponentsList(componentsList, name);
+mixin include-script(name)
+	<!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/components-template/#{name}/script.min.js");-->
+	-
+		isInComponentsList(componentsScriptsList, name);
+mixin include-script-vendor(name)
+	<!--Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/vendor/#{name}");-->
+	-
+		isInComponentsList(vendorScriptsList, name);

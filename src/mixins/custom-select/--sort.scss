@@ -1,0 +1,27 @@
+body, body .content {
+	.custom-select.custom-select--sort {
+		padding: 0;
+		border: none;
+		height: 32px;
+
+		&:hover {
+			box-shadow: none;
+		}
+		.jq-selectbox__select-text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 32px;
+			color: #6BA533;
+		}
+
+		.jq-selectbox__trigger {
+			background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.05542 8.25695C2.6412 8.84274 3.59095 8.84274 4.17674 8.25695L6.04555 6.38814L7.89929 8.24187C8.48507 8.82766 9.43482 8.82766 10.0206 8.24187L10.2223 8.04018C10.4176 7.84492 10.4176 7.52833 10.2223 7.33307L7.11624 4.22701C6.82055 3.93132 6.43213 3.78489 6.0446 3.78771C5.65769 3.78538 5.27005 3.93182 4.97485 4.22702L1.85372 7.34815C1.65846 7.54341 1.65846 7.85999 1.85372 8.05525L2.05542 8.25695Z' fill='%23A5E06F'/%3E%3C/svg%3E%0A");			background-size: 12px 12px;
+			background-position: center;
+			background-repeat: no-repeat;
+			right: 0;
+			width: 32px;
+			height: 32px;
+		}
+	}
+}

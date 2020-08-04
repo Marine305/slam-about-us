@@ -1,0 +1,33 @@
+@import "../../assets/css/common/components-import";
+.header-container {
+  position: unset;
+}
+.header {
+  background: $white;
+  .logo__img {
+	max-width: 210px;
+	.logo {
+		width: 210px;
+	}
+  }
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+	justify-content: space-between;
+	
+//   @media (max-width: 1024px) {
+//     width: 100vw;
+// 		position: absolute;
+// 		z-index: 1;
+//     left: 0;
+// 		top: 0;
+// 		padding: 25px 15px;
+// 	}
+// 	&.active {
+// 		.logo, .social-list {
+// 			display: none;
+// 		}
+// 	}
+}

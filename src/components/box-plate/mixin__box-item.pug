@@ -1,0 +1,13 @@
+mixin box-item(data)
+	+include-style('box-plate')
+	-data = data || {}
+	.box-plate__item(class=data.class)
+		.fs-img
+			+lazy-img({img: data.src, wrap_mod: 'fs-img__main'})
+			+lazy-img({img: data.srchover, wrap_mod: 'fs-img__hover'})
+		.box-plate__body
+			.sub-title=data.subtitle
+			.title=data.title
+			.descr=data.descr
+			a.btn.btn-primary.animate-blink(target="_blank" href=data.href || '#')&attributes(attributes)
+				span Проверить

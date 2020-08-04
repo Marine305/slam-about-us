@@ -1,0 +1,13 @@
+.lazy-img-wrap {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	&.loaded .preloader {
+		display: none;
+	}
+
+	//img:not(.loaded) {
+	//	filter: blur(20px);
+	//}
+}

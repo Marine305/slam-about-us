@@ -1,0 +1,1 @@
+.social-list{display:flex;align-items:center}.social{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;cursor:pointer}.social:not(:last-child){margin-right:7px}.social__icon{fill:#fff;transition:fill .3s}.social:hover .social__icon{fill:#7a4281}

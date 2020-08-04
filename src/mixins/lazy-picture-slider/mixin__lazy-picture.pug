@@ -1,0 +1,31 @@
+mixin lazy-picture-slider(args= {})
+	//- ПРИМЕР
+			+lazy-picture-slider({
+				source: [
+					{
+						img: 'images/hero-img-1.jpg',
+						placeholder: 'images/placeholder/hero-img-1.jpg',
+						media: 1024
+					}, {
+						img: pixel,
+						placeholder: pixel,
+						media: 0
+					}
+				],
+				img: 'images/hero-img-1.jpg',
+				placeholder: 'images/placeholder/hero-img-1.jpg',
+				img_mod: 'CLASS-slide-img',
+				wrap_mod: 'CLASS-slide-img-wrap'
+			})
+	if (args.link)
+		a.lazy-img-wrap(class= args.wrap_mod href='#' aria-label)
+			picture
+				each source in args.source
+					source(data-srcset= source.img, srcset= source.placeholder, media='(min-width: ' + source.media + 'px)')
+				img.swiper-lazy(class= args.img_mod, data-src= args.img, src= args.placeholder,  alt='img')
+	else
+		picture.lazy-img-wrap(class= args.wrap_mod)
+			each source in args.source
+				source(data-srcset= source.img, srcset= source.placeholder, media='(min-width: ' + source.media + 'px)')
+			img.swiper-lazy(class= args.img_mod, data-src= args.img, src= args.placeholder,  alt='img')
+		//-span.preloader

@@ -1,0 +1,56 @@
+-
+	let sitemap = {};
+	let sitemap_l2 = {};
+	let sitemap_l3 = {};
+	sitemap_l3 = {
+		class: 'sitemap-l3',
+		title: 'Ссылка 2 уровня',
+		list: [
+			{
+				name: 'Ссылка 3 уровня',
+				nav: false
+			},
+			{
+				name: 'Ссылка 3 уровня',
+				nav: sitemap_l3
+			}
+		]
+	};
+
+	sitemap_l2 = {
+		class: 'sitemap-l2',
+		title: 'Ссылка',
+		list: [
+			{
+				name: 'Ссылка 2 уровня',
+				nav: false
+			},
+			{
+				name: 'Ссылка 2 уровня',
+				nav: sitemap_l3
+			}
+		]
+	};
+
+	sitemap = {
+		class: 'sitemap-l1',
+		title: false,
+		list: [
+			{
+				name: 'Ссылка 1 уровня',
+				nav: false
+			},
+			{
+				name: 'Ссылка 1 уровня',
+				nav: sitemap_l2
+			},{
+				name: 'Ссылка 1 уровня',
+				nav: false
+			},
+		]
+	};
++include-style('inner-pages')
+.container
+	.row
+		.col-12
+			+nav(sitemap)

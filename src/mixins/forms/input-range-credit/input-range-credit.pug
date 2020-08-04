@@ -1,0 +1,33 @@
+mixin input-range-credit(args = {})
+    - var id = Math.floor(Math.random() * 9999999999)
+    .form-group.form-group--credit(class= args.wrap_mod)
+        if(args.label)
+            label.label.label--input= args.label || "label"
+                if (args.required)
+                    span.label-required *
+                if (args.range_price)
+                    span.range-price-wrap
+                        | Ежемес. платеж:&nbsp;
+                        b.js-range-price 700 р.
+        .form-control.range-value.js-range-value= args.range_value || '2 мес.'
+        input.form-control.range-slider-credit.js-range-slider-credit(
+        type="text",
+        name= "NAME" + id,
+        value="",
+        data-credit-value= args.data_credit_value || '[' +
+        '{"price":"700 р."},' +
+        '{"price":"600 р."},' +
+        '{"price":"500 р."},' +
+        '{"price":"400 р."},' +
+        '{"price":"300 р."},' +
+        '{"price":"200 р."},' +
+        '{"price":"100 р."}' +
+        ']',
+        data-type= args.data_type || "single",
+        data-postfix= args.data_postfix || " мес.",
+        data-extra-classes= args.data_extra_classes || "",
+        )&attributes(attributes)
+
+        if (args.small)
+            small.form-text.text-muted(id= "IDHELP" + id)= args.small
+

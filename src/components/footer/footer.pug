@@ -1,0 +1,19 @@
++include-style('footer')
+.footer-wrap
+	.container
+		.footer
+			.footer__col
+				a(href="#" aria-label="На главную").logo
+					+lazy-img({
+						img: 'images/SLAM_logo-color.svg',
+						img_mod: 'logo__img',
+					})
+				.copy 
+					span © 
+					.copy__name ООО «Слэмсофт», 2020
+			.footer__col
+				a(href="tel:+375445644564") +375 44 564-45-64
+				a(href="tel:+375447119432") +375 44 711-94-32
+			.footer__col
+				a(href="mailto:info@slam.by" target='_blank') info@slam.by
+				+social-list

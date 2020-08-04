@@ -1,0 +1,71 @@
+@import "../../assets/css/common/components-import";
+// animation
+/* stub-method.scss */
+
+// var *****************************************************************************************************************
+$_stub-method-offset: 70px;
+$_stub-method-offset-md: 40px;
+
+// mixins **************************************************************************************************************
+
+// styles **************************************************************************************************************
+.animate-field {
+	.el {
+		position: absolute;
+		opacity: 0.1;
+		animation: opacityElement 3s infinite;
+
+		@keyframes opacityElement {
+			0% {opacity: 0.1}
+			5% {opacity: 0.2}
+			10% {opacity: 0.4}
+			20% {opacity: 0.6}
+			30% {opacity: 0.8}
+			40% {opacity: 1}
+			50% {opacity: 1}
+			60% {opacity: 0.8}
+			70% {opacity: 0.6}
+			80% {opacity: 0.4}
+			90% {opacity: 0.2}
+			100% {opacity: 0.1}
+		}
+
+		$i: 0;
+		$count: 20;
+		@while($i < $count) {
+			$i: $i + 1;
+			&:nth-child(#{$i}) {
+				animation-delay: $i - (0.5s * $i);
+			}
+		}
+	}
+  .el-line-big {
+    position: relative;
+    width: 0;
+    height: 100%;
+		z-index: 100;
+		.lazy-img-wrap.loaded {
+				left: -200px;
+		}
+
+    &__ball {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      transform: translateY(0);
+      user-select: none;
+
+      img {
+        animation: rotate 15s linear infinite;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
