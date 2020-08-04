@@ -37,21 +37,21 @@ body {
 
 .h1,
 h1 {
-  font-size: 42px;
-  line-height: 1;
-  font-weight: bold;
-  margin: 0 0 24px;
-  letter-spacing: 0.05em;
+	font-size: 36px;
+	line-height: 1.4;
+	font-weight: bold;
+	margin: 0 0 24px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	@media (max-width: 1023px) {
+		font-weight: 500;
+		font-size: 32px;
+		margin: 0 0 16px;
+	}
 
-  @media (max-width: 1023px) {
-    font-weight: 500;
-    font-size: 32px;
-    margin: 0 0 16px;
-  }
-
-  &.small {
-    font-size: 24px;
-  }
+	&.small {
+		font-size: 24px;
+	}
 }
 
 .h2,
@@ -71,9 +71,11 @@ h2 {
 
 .h3,
 h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 12px;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
 
 .h4,

@@ -39,33 +39,33 @@ $_stub-method-offset-md: 40px;
 			}
 		}
 	}
-  .el-line-big {
-    position: relative;
-    width: 0;
-    height: 100%;
+	.el-line-big {
+		position: relative;
+		width: 0;
+		height: 100%;
 		z-index: 100;
 		.lazy-img-wrap.loaded {
 				left: -200px;
 		}
 
-    &__ball {
-      position: absolute;
-      z-index: 100;
-      top: 0;
-      left: 0;
-      width: 175px;
-      height: 175px;
-      border-radius: 50%;
-      transform: translateY(0);
-      user-select: none;
+		&__ball {
+			position: absolute;
+			z-index: 100;
+			top: -30px;
+			left: 0;
+			width: 175px;
+			height: 175px;
+			border-radius: 50%;
+			transform: translateY(0);
+			user-select: none;
 
-      img {
-        animation: rotate 15s linear infinite;
-      }
-    }
-  }
-  @media (max-width: 1024px) {
-    display: none;
-  }
+			img {
+				animation: rotate 15s linear infinite;
+			}
+		}
+	}
+	@media (max-width: 1024px) {
+		display: none;
+	}
 }
 

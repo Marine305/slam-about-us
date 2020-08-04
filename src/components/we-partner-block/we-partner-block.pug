@@ -4,47 +4,164 @@
 	//- 	img: 'images/1c-bitrix.png'
 	//- })
 	.container
-		.row
+		.partner-row
 			.container__col
 				h2.we-partner-block__title Топ-партнеры 1С-Битрикс
 				.secondary-text Мы являемся профессиональным интегратором веб-проектов на CMS 1C-Битрикс и имеем статус «Золотой партнер» по Битрикс и Битрикс24. Подтверждением наших компетенций служит чистый и валидный код, обязательно пройденный «Монитор качества» 1С-Битрикс на каждом проекте, высокая скорость работы наших проектов на поддержке, но и тот факт, что мы сами развиваем фреймворк, разрабатывая собственные продуманные модули для маркетплейс 1С-Битрикс.
 				h3 SLAM входит в ТОП-5 партнеров 1С-Битрикс в Беларуси на официальном сайте
 				.badge-panel
-					.badge-panel__item
-						img(src="images/badge-01.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-02.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-03.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-04.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-05.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-06.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-07.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-08.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-09.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-10.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-11.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-12.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-13.jpg", alt="")
-					.badge-panel__item
-						img(src="images/badge-14.jpg", alt="")
+					+lazy-img({
+						img: 'images/badge-01.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-02.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-03.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-04.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-05.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-06.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-07.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-08.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-09.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-10.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-11.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-12.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-13.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					+lazy-img({
+						img: 'images/badge-14.jpg',
+						placeholder: pixel,
+						img_mod: 'badge-panel__img',
+						wrap_mod: 'badge-panel__item',
+						link: false,
+						aria_label: false,
+					})
+					
 			.container__col
 				.sertificat-box
 					.sertificat-box__item
-						img(src="images/we-1.jpg", alt="")
+						+lazy-img({
+							img: 'images/we-1.jpg',
+							placeholder: pixel,
+							img_mod: 'sertificat-box__img',
+							wrap_mod: 'sertificat-box__img-wrap',
+							link: false,
+							aria_label: false,
+						})
+						span Коробочная версия
 					.sertificat-box__item
-						img(src="images/we-2.jpg", alt="")
+						+lazy-img({
+							img: 'images/we-2.jpg',
+							placeholder: pixel,
+							img_mod: 'sertificat-box__img',
+							wrap_mod: 'sertificat-box__img-wrap',
+							link: false,
+							aria_label: false,
+						})
+						span Золотой Партнер
 					.sertificat-box__item
-						img(src="images/we-3.jpg", alt="")
+						+lazy-img({
+							img: 'images/we-3.jpg',
+							placeholder: pixel,
+							img_mod: 'sertificat-box__img',
+							wrap_mod: 'sertificat-box__img-wrap',
+							link: false,
+							aria_label: false,
+						})
+						span Программа мониторинга качества внедрений
 					.sertificat-box__item
-						img(src="images/we-4.jpg", alt="")
+						+lazy-img({
+							img: 'images/we-4.jpg',
+							placeholder: pixel,
+							img_mod: 'sertificat-box__img',
+							wrap_mod: 'sertificat-box__img-wrap',
+							link: false,
+							aria_label: false,
+						})
+						span Интеграция с 1С
